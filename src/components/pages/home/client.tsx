@@ -41,7 +41,7 @@ export function UserEmailForm() {
 		},
 	});
 
-	function handleMouseOver() {
+	function handlePointerEnter() {
 		if (form.formState.isValid) return;
 
 		setPosition((curr) => {
@@ -103,7 +103,7 @@ export function UserEmailForm() {
 					<Button
 						type='submit'
 						className={cn('absolute top-0', form.formState.isValid ? '' : position === 'left' ? 'animate-from-left' : 'animate-from-right')}
-						onMouseOver={handleMouseOver}
+						onPointerEnter={handlePointerEnter}
 					>
 						Submit
 					</Button>
