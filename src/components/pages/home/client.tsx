@@ -61,7 +61,7 @@ export function UserEmailForm() {
 					name='username'
 					render={({ field }) => (
 						<FormItem>
-							<FormLabel>Username</FormLabel>
+							<FormLabel>Username:</FormLabel>
 							<FormControl>
 								<Input placeholder='shadcn' autoComplete='off' {...field} />
 							</FormControl>
@@ -74,7 +74,7 @@ export function UserEmailForm() {
 					name='password'
 					render={({ field }) => (
 						<FormItem>
-							<FormLabel>Password</FormLabel>
+							<FormLabel>Password:</FormLabel>
 							<FormControl>
 								<Input placeholder='Password' autoComplete='off' {...field} />
 							</FormControl>
@@ -87,7 +87,7 @@ export function UserEmailForm() {
 					name='confirmPassword'
 					render={({ field }) => (
 						<FormItem>
-							<FormLabel>Confirm Password</FormLabel>
+							<FormLabel>Confirm Password:</FormLabel>
 							<FormControl>
 								<Input placeholder='Confirm Password' autoComplete='off' {...field} />
 							</FormControl>
