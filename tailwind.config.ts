@@ -77,6 +77,9 @@ const config = {
 				'from-left': 'from-left 0.3s ease forwards',
 				'from-right': 'from-right 0.3s ease forwards',
 			},
+			minHeight: {
+				hvh: 'calc(100vh - 64px)',
+			},
 		},
 	},
 	plugins: [require('tailwindcss-animate')],
