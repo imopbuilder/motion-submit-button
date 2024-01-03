@@ -103,6 +103,7 @@ export function UserEmailForm() {
 					<Button
 						type='submit'
 						className={cn('relative', form.formState.isValid ? '' : position === 'left' ? 'animate-from-left' : 'animate-from-right')}
+						size='lg'
 						onPointerEnter={handlePointerEnter}
 					>
 						Submit
