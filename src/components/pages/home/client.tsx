@@ -7,6 +7,7 @@ import { cn } from '@/lib/utils/cn';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useState } from 'react';
 import { useForm } from 'react-hook-form';
+import { toast } from 'sonner';
 import z from 'zod';
 
 const formSchema = z
@@ -50,7 +51,9 @@ export function UserEmailForm() {
 	}
 
 	function onSubmit(values: z.infer<typeof formSchema>) {
-		console.log(values);
+		toast.success('Login success', {
+			description: <span className='font-medium'>{values.username}</span>,
+		});
 	}
 
 	return (
