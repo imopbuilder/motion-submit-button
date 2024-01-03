@@ -52,7 +52,7 @@ export function UserEmailForm() {
 
 	function onSubmit(values: z.infer<typeof formSchema>) {
 		toast.success('Login success', {
-			description: <span className='font-medium'>{values.username}</span>,
+			description: <span className='font-medium'>{values.username} ❤️</span>,
 		});
 	}
 
@@ -99,10 +99,10 @@ export function UserEmailForm() {
 						</FormItem>
 					)}
 				/>
-				<div className={'h-9 relative'}>
+				<div>
 					<Button
 						type='submit'
-						className={cn('absolute top-0', form.formState.isValid ? '' : position === 'left' ? 'animate-from-left' : 'animate-from-right')}
+						className={cn('relative', form.formState.isValid ? '' : position === 'left' ? 'animate-from-left' : 'animate-from-right')}
 						onPointerEnter={handlePointerEnter}
 					>
 						Submit
