@@ -30,7 +30,7 @@ const formSchema = z
 	});
 
 export function UserEmailForm() {
-	const [position, setPosition] = useState<'left' | 'right'>('left');
+	const [position, setPosition] = useState<'left' | 'right'>('right');
 	const form = useForm<z.infer<typeof formSchema>>({
 		resolver: zodResolver(formSchema),
 		defaultValues: {
